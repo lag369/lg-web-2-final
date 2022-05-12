@@ -1,1 +1,1 @@
-# lg-web-2-final
+# Joe-Web-2-InClass
