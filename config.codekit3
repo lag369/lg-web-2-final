@@ -684,7 +684,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/calender.scss" : {
+    "\/dev\/scss\/sections\/_calender.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -692,14 +692,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/calender.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_calender.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/categories.scss" : {
+    "\/dev\/scss\/sections\/_categories.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -707,14 +707,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/categories.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_categories.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/craigs.scss" : {
+    "\/dev\/scss\/sections\/_craigs.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -722,14 +722,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/craigs.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_craigs.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/header.scss" : {
+    "\/dev\/scss\/sections\/_hero1.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -737,23 +737,8 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/header.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/hero1.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/hero1.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero1.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

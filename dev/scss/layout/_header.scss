@@ -1,3 +1,44 @@
 /* =============
     Header
 ============= */
+
+#header-navbar{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title . header-buttons";
+
+    #title{
+        grid-area: "title";
+        background-color: $b8;
+        color: $white;
+    }
+
+    #header-buttons{
+        grid-area: "header-buttons";
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "search account hamburger";
+
+        .search{
+            grid-area: "search";
+            .seabutton{
+                width: 100%;
+            }
+        }
+
+        .account{
+            grid-area: "account";
+            .accbutton{
+                width: 100%;
+            }
+        }
+
+        .hamburger{
+            grid-area: "hamburger";
+            .hambutton{
+                width: 100%;
+            }
+        }
+    }
+}

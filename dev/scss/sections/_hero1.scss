@@ -1,0 +1,63 @@
+
+#hero1{
+
+
+    #locations-dropdown{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "location . . ";
+        grid-area: "location";
+
+        .location{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "p img";
+
+            .p{
+                grid-area: "p";
+            }
+
+            .img{
+                grid-area: "img";
+            }
+
+        }
+    }
+
+    .title{
+
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-areas: " . title . ";
+
+        .p{
+            color: $white;
+            grid-area: "title";
+        }
+    }
+
+    .search-bar{
+
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: " . search . ";
+        grid-area: "search";
+
+        .search{
+
+            display: grid;
+            grid-template-columns: 1fr 20% 1fr;
+            grid-template-areas: "p . img";
+
+            .p{
+                grid-area: "p";
+            }
+
+            .img{
+                grid-area: "img";
+            }
+        }
+    }
+}

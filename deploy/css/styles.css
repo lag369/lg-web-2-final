@@ -382,6 +382,84 @@ textarea {
 /* =============
     Header
 ============= */
+#header-navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "title . header-buttons";
+}
+#header-navbar #title {
+  grid-area: "title";
+  background-color: #1409ED;
+  color: #fff;
+}
+#header-navbar #header-buttons {
+  grid-area: "header-buttons";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "search account hamburger";
+}
+#header-navbar #header-buttons .search {
+  grid-area: "search";
+}
+#header-navbar #header-buttons .search .seabutton {
+  width: 100%;
+}
+#header-navbar #header-buttons .account {
+  grid-area: "account";
+}
+#header-navbar #header-buttons .account .accbutton {
+  width: 100%;
+}
+#header-navbar #header-buttons .hamburger {
+  grid-area: "hamburger";
+}
+#header-navbar #header-buttons .hamburger .hambutton {
+  width: 100%;
+}
+
 /* =============
     Footer
 ============= */
+#hero1 #locations-dropdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "location . . ";
+  grid-area: "location";
+}
+#hero1 #locations-dropdown .location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "p img";
+}
+#hero1 #locations-dropdown .location .p {
+  grid-area: "p";
+}
+#hero1 #locations-dropdown .location .img {
+  grid-area: "img";
+}
+#hero1 .title {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-areas: " . title . ";
+}
+#hero1 .title .p {
+  color: #fff;
+  grid-area: "title";
+}
+#hero1 .search-bar {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas: " . search . ";
+  grid-area: "search";
+}
+#hero1 .search-bar .search {
+  display: grid;
+  grid-template-columns: 1fr 20% 1fr;
+  grid-template-areas: "p . img";
+}
+#hero1 .search-bar .search .p {
+  grid-area: "p";
+}
+#hero1 .search-bar .search .img {
+  grid-area: "img";
+}
