@@ -420,6 +420,848 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #304093;
+}
+#footer #footer-links #r1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a1 a2 a3";
+}
+#footer #footer-links #r1 .a1 .p {
+  color: #fff;
+}
+#footer #footer-links #r1 .a2 .p {
+  color: #fff;
+}
+#footer #footer-links #r1 .a3 .p {
+  color: #fff;
+}
+#footer #footer-links #r2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "b1 b2 b3";
+}
+#footer #footer-links #r2 .b1 .p {
+  color: #fff;
+}
+#footer #footer-links #r2 .b2 .p {
+  color: #fff;
+}
+#footer #footer-links #r2 .b3 .p {
+  color: #fff;
+}
+#footer #footer-links #r3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "c1 c2 c3";
+}
+#footer #footer-links #r3 .c1 .p {
+  color: #fff;
+}
+#footer #footer-links #r3 .c2 .p {
+  color: #fff;
+}
+#footer #footer-links #r3 .c3 .p {
+  color: #fff;
+}
+#footer #footer-links #r4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "d1 d2 d3";
+}
+#footer #footer-links #r4 .d1 .p {
+  color: #fff;
+}
+#footer #footer-links #r4 .d2 .p {
+  color: #fff;
+}
+#footer #footer-links #r4 .d3 .p {
+  color: #fff;
+}
+#footer #bottom-stuff .a {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a1 a2 a3 a4 a5";
+}
+#footer #bottom-stuff .a .p {
+  grid-area: "a1";
+}
+#footer #bottom-stuff .a .p {
+  grid-area: "a2";
+}
+#footer #bottom-stuff .a .p {
+  grid-area: "a3";
+}
+#footer #bottom-stuff .a .p {
+  grid-area: "a4";
+}
+#footer #bottom-stuff .a .p {
+  grid-area: "a5";
+}
+#footer #bottom-stuff .b {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "b1 b2 b3 b4";
+}
+#footer #bottom-stuff .b .p {
+  grid-area: "b1";
+}
+#footer #bottom-stuff .b .p {
+  grid-area: "b2";
+}
+#footer #bottom-stuff .b .p {
+  grid-area: "b3";
+}
+#footer #bottom-stuff .b .p {
+  grid-area: "b4";
+}
+
+#calender {
+  margin: 16px;
+}
+#calender #calender-title {
+  display: grid;
+  grid-template-columns: 60% 1fr 1fr;
+  grid-template-areas: "events . left-arrow right-arrow";
+}
+#calender #calender-title p {
+  grid-area: "events";
+  font-size: 24pt;
+  color: #314DE0;
+}
+#calender #calender-title .img {
+  grid-area: "left-arrow";
+}
+#calender #calender-title .img {
+  grid-area: "right-arrow";
+}
+#calender #actual-calender {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "calender-days calender-events";
+  border-radius: 15px;
+  background-color: #72A3FA;
+}
+#calender #actual-calender #calender-days {
+  grid-area: "calender-days";
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "sunday" "monday" "tuesday" "wednesday" "thursday" "friday" "saturday";
+  margin: 16px;
+  align-items: center;
+}
+#calender #actual-calender #calender-days .r1 {
+  grid-area: "day1";
+  color: #fff;
+}
+#calender #actual-calender #calender-days .r2 {
+  grid-area: "day2";
+  color: #fff;
+}
+#calender #actual-calender #calender-days .r3 {
+  grid-area: "day3";
+  color: #fff;
+}
+#calender #actual-calender #calender-days .r4 {
+  grid-area: "day4";
+  color: #fff;
+}
+#calender #actual-calender #calender-days .r5 {
+  grid-area: "day5";
+  color: #fff;
+}
+#calender #actual-calender #calender-days .r6 {
+  grid-area: "day6";
+  color: #fff;
+}
+#calender #actual-calender #calender-days .r7 {
+  grid-area: "day7";
+  color: #fff;
+}
+#calender #actual-calender #calender-events {
+  grid-area: "calender-events";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " . day1" "day2 . " "day3 . " " . day4" " . day5" "day6 day6" "day7 . ";
+  padding: 16px;
+  border-radius: 15px;
+}
+#calender #actual-calender #calender-events #events .sunday {
+  grid-area: "sunday";
+}
+#calender #actual-calender #calender-events #events .sunday .paint {
+  grid-area: "paint";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events .monday {
+  grid-area: "monday";
+}
+#calender #actual-calender #calender-events #events .monday .auto {
+  grid-area: "auto";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events .tuesday {
+  grid-area: "tuesday";
+}
+#calender #actual-calender #calender-events #events .tuesday .waffle {
+  grid-area: "waffle";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events .wednesday {
+  grid-area: "wednesday";
+}
+#calender #actual-calender #calender-events #events .wednesday .some {
+  grid-area: "some";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events .thursday {
+  grid-area: "thursday";
+}
+#calender #actual-calender #calender-events #events .thursday .fundraiser {
+  grid-area: "fundraiser";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events .friday {
+  grid-area: "friday";
+}
+#calender #actual-calender #calender-events #events .friday .fundraiser {
+  grid-area: "fundraiser";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events .friday .auto {
+  grid-area: "auto";
+  background-color: #fff;
+}
+#calender #actual-calender #calender-events #events .saturday {
+  grid-area: "saturday";
+}
+#calender #actual-calender #calender-events #events .saturday .paint {
+  grid-area: "paint";
+  background-color: #fff;
+}
+
+#categories {
+  margin: 16px;
+}
+#categories #heading #heading2 {
+  grid-area: "heading2";
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-areas: "community . services . discussion . housing . for-sale . jobs";
+}
+#categories #heading #heading2 .community {
+  grid-area: "community";
+  background-color: #3F68F0;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+#categories #heading #heading2 .community p {
+  color: #fff;
+  font-size: 9pt;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#categories #heading #heading2 .services {
+  grid-area: "services";
+  background-color: #72A3FA;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+#categories #heading #heading2 .services p {
+  color: #fff;
+  font-size: 9pt;
+}
+#categories #heading #heading2 .discussion {
+  grid-area: "discussion";
+  background-color: #3F68F0;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+#categories #heading #heading2 .discussion p {
+  color: #fff;
+  font-size: 9pt;
+}
+#categories #heading #heading2 .housing {
+  grid-area: "housing";
+  background-color: #3F68F0;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+#categories #heading #heading2 .housing p {
+  color: #fff;
+  font-size: 9pt;
+}
+#categories #heading #heading2 .for-sale {
+  grid-area: "for-sale";
+  background-color: #3F68F0;
+  border-radius: 10px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+#categories #heading #heading2 .for-sale p {
+  color: #fff;
+  font-size: 9pt;
+}
+#categories #heading #heading2 .jobs {
+  grid-area: "jobs";
+  background-color: #3F68F0;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+#categories #heading #heading2 .jobs p {
+  color: #fff;
+  font-size: 9pt;
+}
+#categories #categories-icons {
+  background-color: #C8E2FE;
+  border-radius: 16px;
+  font-size: 9pt;
+}
+#categories #categories-icons #icons-r1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "auto beauty cell computer";
+}
+#categories #categories-icons #icons-r1 .a1 {
+  grid-area: "auto";
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 24px;
+  margin-right: 15%;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r1 .a1 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r1 .a2 {
+  grid-area: "beauty";
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r1 .a2 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r1 .a3 {
+  grid-area: "cell";
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r1 .a3 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r1 .a4 {
+  grid-area: "computer";
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r1 .a4 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "creative cycle event farm";
+}
+#categories #categories-icons #icons-r2 .b1 {
+  grid-area: "creative";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r2 .b1 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r2 .b2 {
+  grid-area: "cycle";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r2 .b2 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r2 .b3 {
+  grid-area: "event";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r2 .b3 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r2 .b4 {
+  grid-area: "farm";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r2 .b4 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "financial health household labor";
+}
+#categories #categories-icons #icons-r3 .c1 {
+  grid-area: "financial";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r3 .c1 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r3 .c2 {
+  grid-area: "health";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r3 .c2 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r3 .c3 {
+  grid-area: "household";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r3 .c3 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r3 .c4 {
+  grid-area: "labor";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r3 .c4 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "legal lesson marine pet";
+}
+#categories #categories-icons #icons-r4 .d1 {
+  grid-area: "legal";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r4 .d1 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r4 .d2 {
+  grid-area: "lesson";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r4 .d2 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r4 .d3 {
+  grid-area: "marine";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r4 .d3 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r4 .d4 {
+  grid-area: "pet";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r4 .d4 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "real-estate trade ads travel";
+}
+#categories #categories-icons #icons-r5 .e1 {
+  grid-area: "real-estate";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r5 .e1 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r5 .e2 {
+  grid-area: "trade";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r5 .e2 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r5 .e3 {
+  grid-area: "ads";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r5 .e3 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r5 .e4 {
+  grid-area: "travel";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r5 .e4 p {
+  color: #fff;
+}
+#categories #categories-icons #icons-r6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "write . . . ";
+}
+#categories #categories-icons #icons-r6 .f1 {
+  grid-area: "write";
+  background-color: #72A3FA;
+  background-color: #72A3FA;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 10%;
+}
+#categories #categories-icons #icons-r6 .f1 p {
+  color: #fff;
+}
+
+#craigs {
+  background-color: #DFEBF8;
+}
+#craigs .craig-header {
+  background-color: #72A3FA;
+  color: #fff;
+  font-size: 24pt;
+  padding-top: 30px;
+  padding-left: 16px;
+}
+#craigs #map {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: " . mapimg . " " . map-buttons . ";
+  background-color: #3F68F0;
+  border-radius: 16px;
+  margin: 16px;
+}
+#craigs #map .map-image .img {
+  grid-area: "mapimg";
+  width: 100%;
+}
+#craigs #map #map-stuff {
+  grid-area: "map-buttons";
+}
+#craigs #map #map-stuff .map-buttons {
+  display: grid;
+  grid-template-columns: 10% 60% 10% 10% 10%;
+  grid-template-areas: "dots . location filter settings";
+  background-color: #72A3FA;
+  border-radius: 16px;
+}
+#craigs #map #map-stuff .map-buttons .img {
+  grid-area: "dots";
+}
+#craigs #map #map-stuff .map-buttons .img {
+  grid-area: "location";
+}
+#craigs #map #map-stuff .map-buttons .img {
+  grid-area: "filter";
+}
+#craigs #map #map-stuff .map-buttons .img {
+  grid-area: "settings";
+}
+#craigs #listings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "lamp chair" "dresser dresser2" "couch shelf";
+  margin: 16px;
+}
+#craigs #listings .lamp {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img" "info";
+  background-color: #3F68F0;
+  border-radius: 16px;
+  margin-right: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#craigs #listings .lamp .lamp-img {
+  grid-area: "img";
+}
+#craigs #listings .lamp .lamp-info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  color: #fff;
+}
+#craigs #listings .lamp .lamp-info .p {
+  grid-area: "name";
+}
+#craigs #listings .lamp .lamp-info .img {
+  grid-area: "bookmark";
+}
+#craigs #listings .lamp .lamp-info .p {
+  grid-area: "location";
+}
+#craigs #listings .chair {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img" "info";
+  background-color: #3F68F0;
+  border-radius: 16px;
+  margin-left: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#craigs #listings .chair .chair-img {
+  grid-area: "img";
+}
+#craigs #listings .chair .chair-info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  color: #fff;
+}
+#craigs #listings .chair .chair-info .p {
+  grid-area: "name";
+}
+#craigs #listings .chair .chair-info .img {
+  grid-area: "bookmark";
+}
+#craigs #listings .chair .chair-info .p {
+  grid-area: "location";
+}
+#craigs #listings .dresser {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img" "info";
+  background-color: #3F68F0;
+  border-radius: 16px;
+  margin-right: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#craigs #listings .dresser .dresser-img {
+  grid-area: "img";
+}
+#craigs #listings .dresser .dresser-info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  color: #fff;
+}
+#craigs #listings .dresser .dresser-info .p {
+  grid-area: "name";
+}
+#craigs #listings .dresser .dresser-info .img {
+  grid-area: "bookmark";
+}
+#craigs #listings .dresser .dresser-info .p {
+  grid-area: "location";
+}
+#craigs #listings .dresser2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img" "info";
+  background-color: #3F68F0;
+  border-radius: 16px;
+  margin-left: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#craigs #listings .dresser2 .dresser2-img {
+  grid-area: "img";
+}
+#craigs #listings .dresser2 .dresser2-info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  color: #fff;
+}
+#craigs #listings .dresser2 .dresser2-info .p {
+  grid-area: "name";
+}
+#craigs #listings .dresser2 .dresser2-info .img {
+  grid-area: "bookmark";
+}
+#craigs #listings .dresser2 .dresser2-info .p {
+  grid-area: "location";
+}
+#craigs #listings .couch {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img" "info";
+  background-color: #3F68F0;
+  border-radius: 16px;
+  margin-right: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#craigs #listings .couch .couch-img {
+  grid-area: "img";
+}
+#craigs #listings .couch .couch-info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  color: #fff;
+}
+#craigs #listings .couch .couch-info .p {
+  grid-area: "name";
+}
+#craigs #listings .couch .couch-info .img {
+  grid-area: "bookmark";
+}
+#craigs #listings .couch .couch-info .p {
+  grid-area: "location";
+}
+#craigs #listings .shelf-thing {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img" "info";
+  background-color: #3F68F0;
+  border-radius: 16px;
+  margin-left: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#craigs #listings .shelf-thing .shelf-img {
+  grid-area: "img";
+}
+#craigs #listings .shelf-thing .shelf-info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name bookmark" "location . ";
+  color: #fff;
+}
+#craigs #listings .shelf-thing .shelf-info .p {
+  grid-area: "name";
+}
+#craigs #listings .shelf-thing .shelf-info .img {
+  grid-area: "bookmark";
+}
+#craigs #listings .shelf-thing .shelf-info .p {
+  grid-area: "location";
+}
+#craigs #see-more-bundle {
+  display: grid;
+  grid-template-columns: 35% auto 35%;
+  grid-template-areas: ". see-more ." ". down-arrow .";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "see-more" "down-arrow";
+}
+#craigs #see-more-bundle .see-more .p {
+  grid-area: "see-more";
+  color: #314DE0;
+}
+#craigs #see-more-bundle .down-arrow .img {
+  grid-area: "down-arrow";
+}
+
 #hero1 #locations-dropdown {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

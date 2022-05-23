@@ -1,0 +1,442 @@
+
+#categories{
+
+    margin: 16px;
+
+    #heading{
+
+        #heading2{
+            grid-area: "heading2";
+                        
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas: "community . services . discussion . housing . for-sale . jobs";
+
+            .community{
+                grid-area: "community";
+                background-color: $b6;
+                border-radius: 10px;
+                margin-right: 3px;
+                margin-bottom: 5px;
+                
+                p{
+                    color: $white;
+                    font-size: 9pt;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+            .services{
+                grid-area: "services";
+                background-color: $b5;
+                border-radius: 10px;
+                margin-right: 3px;
+                margin-bottom: 5px;
+    
+                padding-left: 8px;
+                
+                p{
+                    color: $white;
+                    font-size: 9pt;
+                }
+            }
+            .discussion{
+                grid-area: "discussion";
+                background-color: $b6;
+                border-radius: 10px;
+                margin-right: 3px;
+                margin-bottom: 5px;
+    
+                padding-left: 8px;
+                
+                p{
+                    color: $white;
+                    font-size: 9pt;
+                }
+            }
+            .housing{
+                grid-area: "housing";
+                background-color: $b6;
+                border-radius: 10px;
+                margin-right: 3px;
+                margin-bottom: 5px;
+    
+                padding-left: 8px;
+                
+                p{
+                    color: $white;
+                    font-size: 9pt;
+                }
+            }
+            .for-sale{
+                grid-area: "for-sale";
+                background-color: $b6;
+                border-radius: 10px;
+                margin-right: 3px;
+                margin-bottom: 5px;
+    
+                padding-left: 8px;
+                
+    
+                p{
+                    color: $white;
+                    font-size: 9pt;
+                }
+            }
+            .jobs{
+                grid-area: "jobs";
+                background-color: $b6;
+                border-radius: 10px;
+                margin-bottom: 5px;
+                padding-left: 8px;
+                
+                p{
+                    color: $white;
+                    font-size: 9pt;
+                }
+            }
+        }
+    }
+
+    #categories-icons{
+
+        background-color: $b3;
+        border-radius: 16px;
+        font-size: 9pt;
+
+        #icons-r1{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "auto beauty cell computer";
+    
+            .a1{
+                grid-area: "auto";
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 24px;
+                margin-right: 15%;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .a2{
+                grid-area: "beauty";
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .a3{
+                grid-area: "cell";
+                background-color: $b5;
+                border-radius: 16px;
+                
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .a4{
+                grid-area: "computer";
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+        }
+        #icons-r2{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "creative cycle event farm";
+    
+            .b1{
+                grid-area: "creative";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .b2{
+                grid-area: "cycle";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .b3{
+                grid-area: "event";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .b4{
+                grid-area: "farm";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+        }
+        #icons-r3{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "financial health household labor";
+    
+            .c1{
+                grid-area: "financial";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .c2{
+                grid-area: "health";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .c3{
+                grid-area: "household";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .c4{
+                grid-area: "labor";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+        }
+        #icons-r4{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "legal lesson marine pet";
+    
+            .d1{
+                grid-area: "legal";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .d2{
+                grid-area: "lesson";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin:10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .d3{
+                grid-area: "marine";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .d4{
+                grid-area: "pet";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+        }
+    
+        #icons-r5{
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "real-estate trade ads travel";
+    
+            .e1{
+                grid-area: "real-estate";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .e2{
+                grid-area: "trade";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .e3{
+                grid-area: "ads";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+            .e4{
+                grid-area: "travel";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+        }
+        #icons-r6{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "write . . . ";
+    
+            .f1{
+                grid-area: "write";
+                background-color: $b5;
+                background-color: $b5;
+                border-radius: 16px;
+    
+                text-align: center;
+                padding-top: 16px;
+                margin: 10%;
+    
+                p{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

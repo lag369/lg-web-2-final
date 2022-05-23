@@ -1,0 +1,390 @@
+
+#craigs{
+
+    background-color: $b2;
+
+    .craig-header{
+        background-color: $b5;
+        color: $white;
+        font-size: 24pt;
+        
+        padding-top: 30px;
+        padding-left: 16px;
+    }
+
+    #map{
+
+        display: grid;
+        grid-template-columns: auto 1fr auto ;
+        grid-template-rows: 
+        1fr
+        1fr;
+        grid-template-areas: 
+        " . mapimg . "
+        " . map-buttons . ";
+
+        background-color: $b6;
+        border-radius: 16px;
+        margin: 16px;
+
+        .map-image{
+    
+            .img{
+                grid-area: "mapimg";
+                width: 100%;
+            }
+        }
+
+        #map-stuff{
+
+            grid-area: "map-buttons";
+
+            .map-buttons{
+    
+                display: grid;
+                grid-template-columns: 10% 60% 10% 10% 10%;
+                grid-template-areas: "dots . location filter settings";
+    
+                background-color: $b5;
+                border-radius: 16px;
+    
+                .img{
+                    grid-area: "dots";
+                }
+                .img{
+                    grid-area: "location";
+                }
+                .img{
+                    grid-area: "filter";
+                }
+                .img{
+                    grid-area: "settings";
+                }
+            }
+        }
+    }
+
+    #listings{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 
+        1fr
+        1fr
+        1fr ;
+        grid-template-areas: 
+        "lamp chair"
+        "dresser dresser2"
+        "couch shelf";
+
+        margin: 16px;
+
+        .lamp{
+
+            display: grid;
+            grid-template-rows: 
+            1fr
+            1fr;
+            grid-template-areas: 
+            "img"
+            "info";
+
+            background-color: $b6;
+            border-radius: 16px;
+            margin-right: 5px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+
+
+            .lamp-img{
+                grid-area: "img";
+            }
+            .lamp-info{
+
+                grid-area: "info";
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+
+                color: $white;
+
+                .p{
+                    grid-area: "name";
+                }
+                .img{
+                    grid-area: "bookmark";
+                }
+                .p{
+                    grid-area: "location";
+                }
+            }
+        }
+
+        .chair{
+
+            display: grid;
+            grid-template-rows: 
+            1fr
+            1fr;
+            grid-template-areas: 
+            "img"
+            "info";
+
+            background-color: $b6;
+            border-radius: 16px;
+            margin-left: 5px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+
+            .chair-img{
+                grid-area: "img";
+            }
+            .chair-info{
+
+                grid-area: "info";
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+
+                color: $white;
+
+                .p{
+                    grid-area: "name";
+                }
+                .img{
+                    grid-area: "bookmark";
+                }
+                .p{
+                    grid-area: "location";
+                }
+            }
+        }
+
+        .dresser{
+
+            display: grid;
+            grid-template-rows: 
+            1fr
+            1fr;
+            grid-template-areas: 
+            "img"
+            "info";
+
+            background-color: $b6;
+            border-radius: 16px;
+            margin-right: 5px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+
+            .dresser-img{
+                grid-area: "img";
+            }
+            .dresser-info{
+
+                grid-area: "info";
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+
+                color: $white;
+
+                .p{
+                    grid-area: "name";
+                }
+                .img{
+                    grid-area: "bookmark";
+                }
+                .p{
+                    grid-area: "location";
+                }
+            }
+        }
+
+        .dresser2{
+
+            display: grid;
+            grid-template-rows: 
+            1fr
+            1fr;
+            grid-template-areas: 
+            "img"
+            "info";
+
+            background-color: $b6;
+            border-radius: 16px;
+            margin-left: 5px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+
+            .dresser2-img{
+                grid-area: "img";
+            }
+            .dresser2-info{
+
+                grid-area: "info";
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+
+                color: $white;
+
+                .p{
+                    grid-area: "name";
+                }
+                .img{
+                    grid-area: "bookmark";
+                }
+                .p{
+                    grid-area: "location";
+                }
+            }
+        }
+
+        .couch{
+
+            display: grid;
+            grid-template-rows: 
+            1fr
+            1fr;
+            grid-template-areas: 
+            "img"
+            "info";
+
+            background-color: $b6;
+            border-radius: 16px;
+            margin-right: 5px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+
+            .couch-img{
+                grid-area: "img";
+            }
+            .couch-info{
+
+                grid-area: "info";
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+
+                color: $white;
+
+                .p{
+                    grid-area: "name";
+                }
+                .img{
+                    grid-area: "bookmark";
+                }
+                .p{
+                    grid-area: "location";
+                }
+            }
+        }
+
+        .shelf-thing{
+
+            display: grid;
+            grid-template-rows: 
+            1fr
+            1fr;
+            grid-template-areas: 
+            "img"
+            "info";
+
+            background-color: $b6;
+            border-radius: 16px;
+            margin-left: 5px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+
+            .shelf-img{
+                grid-area: "img";
+            }
+            .shelf-info{
+
+                grid-area: "info";
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "name bookmark"
+                "location . ";
+
+                color: $white;
+
+                .p{
+                    grid-area: "name";
+                }
+                .img{
+                    grid-area: "bookmark";
+                }
+                .p{
+                    grid-area: "location";
+                }
+            }
+        }
+    }
+
+    #see-more-bundle{
+
+        display: grid;
+        grid-template-columns: 35% auto 35%;
+        grid-template-areas: 
+        ". see-more ."
+        ". down-arrow .";
+
+        grid-template-rows: 
+        1fr 
+        1fr ;
+        grid-template-areas: 
+        "see-more"
+        "down-arrow";
+
+        .see-more{
+
+            .p{
+                grid-area: "see-more";
+
+                color: $b7;
+            }
+        }
+        .down-arrow{
+           
+            .img{
+                grid-area: "down-arrow"; 
+            }
+        }
+    }
+}

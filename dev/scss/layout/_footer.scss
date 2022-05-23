@@ -1,3 +1,151 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+
+    background-color: $b9;
+
+    #footer-links{
+
+       #r1{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "a1 a2 a3";
+    
+        .a1{
+            .p{
+                color: $white;
+            }
+        }
+        .a2{
+            .p{
+                color: $white;
+            }
+        }
+        .a3{
+            .p{
+                color: $white;
+            }
+        }
+       }
+
+        #r2{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "b1 b2 b3";
+        
+            .b1{
+                .p{
+                    color: $white;
+                }
+            }
+            .b2{
+                .p{
+                    color: $white;
+                }
+            }
+            .b3{
+                .p{
+                    color: $white;
+                }
+            }
+        }
+
+        #r3{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "c1 c2 c3";
+        
+            .c1{
+                .p{
+                    color: $white;
+                }
+            }
+            .c2{
+                .p{
+                    color: $white;
+                }
+            }
+            .c3{
+                .p{
+                    color: $white;
+                }
+            }
+        }
+
+        #r4{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "d1 d2 d3";
+        
+            .d1{
+                .p{
+                    color: $white;
+                }
+            }            
+            .d2{
+                .p{
+                    color: $white;
+                }
+            }
+            .d3{
+                .p{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    #bottom-stuff{
+
+
+        .a{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "a1 a2 a3 a4 a5";
+
+            .p{
+                grid-area: "a1";
+            }
+            .p{
+                grid-area: "a2";   
+            }
+            .p{
+                grid-area: "a3";
+            }
+            .p{
+                grid-area: "a4";
+            }
+            .p{
+                grid-area: "a5";
+            }
+            }
+    
+        .b{ 
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "b1 b2 b3 b4";
+
+           .p{
+                grid-area: "b1";
+            }
+            .p{
+                grid-area: "b2";
+            }
+            .p{
+                grid-area: "b3"; 
+            }
+            .p{
+                grid-area: "b4";
+            }
+        }
+
+    }
+}

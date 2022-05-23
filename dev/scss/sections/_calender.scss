@@ -1,0 +1,190 @@
+
+#calender{
+
+    margin: 16px;
+
+    #calender-title{
+
+        display: grid;
+        grid-template-columns: 60% 1fr 1fr;
+        grid-template-areas: "events . left-arrow right-arrow";
+
+        p{
+            grid-area: "events";
+            font-size: 24pt;
+            color: $b7;
+        }
+        .img{
+            grid-area: "left-arrow";
+        }
+        .img{
+            grid-area: "right-arrow";
+        }
+    }
+
+    #actual-calender{
+
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: "calender-days calender-events";
+
+        border-radius: 15px;
+
+        background-color: $b5;
+
+        #calender-days{
+
+            grid-area: "calender-days";
+    
+            display: grid;
+
+            grid-template-rows: 
+            1fr
+            1fr
+            1fr
+            1fr
+            1fr
+            1fr
+            1fr;
+            grid-template-areas: 
+            "sunday"
+            "monday"
+            "tuesday"
+            "wednesday"
+            "thursday"
+            "friday"
+            "saturday";
+
+
+            margin: 16px;
+            align-items: center;
+
+            .r1{
+                grid-area: "day1";
+                color: $white;
+            }
+            .r2{
+                grid-area: "day2";
+                color: $white;
+            }
+            .r3{
+                grid-area: "day3";
+                color: $white;
+            }        
+            .r4{
+                grid-area: "day4";
+                color: $white;
+            }      
+            .r5{
+                grid-area: "day5";
+                color: $white;
+            }         
+            .r6{
+                grid-area: "day6";
+                color: $white;
+            }         
+            .r7{
+                grid-area: "day7";
+                color: $white;
+            }
+        }
+
+        #calender-events{
+
+            grid-area: "calender-events";
+            background-color: $white;
+
+            #events{
+
+                grid-template-rows: 
+                1fr 1fr
+                1fr 1fr
+                1fr 1fr
+                1fr 1fr
+                1fr 1fr
+                1fr 1fr
+                1fr 1fr;
+                grid-template-areas: 
+                " . day1"
+                "day2 . "
+                "day3 . "
+                " . day4"
+                " . day5"
+                "day6 day6"
+                "day7 . ";
+
+
+                padding: 16px;
+                border-radius: 15px;
+                
+                .sunday{
+                    grid-area: "sunday";
+                    .paint{
+                        grid-area: "paint";
+                        background-color: $white;
+        
+                    }
+                }
+        
+                .monday{
+                    grid-area: "monday";
+                    .auto{
+                        grid-area: "auto";
+                        background-color: $white;
+                    }
+                }
+        
+                .tuesday{
+                    grid-area: "tuesday";
+                    .waffle{
+                        grid-area: "waffle";
+                        background-color: $white;
+        
+                    }
+                }
+        
+                .wednesday{
+                    grid-area: "wednesday";
+                    .some{
+                        grid-area: "some";
+                        background-color: $white;
+        
+                    }
+                }
+        
+                .thursday{
+                    grid-area: "thursday";
+                    .fundraiser{
+                        grid-area: "fundraiser";
+                        background-color: $white;
+        
+                    }
+                }
+        
+                .friday{
+                    grid-area: "friday";
+                    .fundraiser{
+                        grid-area: "fundraiser";
+                        background-color: $white;
+        
+                    }
+                    .auto{
+                        grid-area: "auto";
+                        background-color: $white;
+                    }
+                }
+        
+                .saturday{
+                    grid-area: "saturday";
+                    .paint{
+                        grid-area: "paint";
+                        background-color: $white;
+        
+                    }
+                }
+            }
+            
+        }
+    
+    }
+}
