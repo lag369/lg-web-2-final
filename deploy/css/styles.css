@@ -384,13 +384,16 @@ textarea {
 ============= */
 #header-navbar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "title . header-buttons";
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title header-buttons";
 }
 #header-navbar #title {
   grid-area: "title";
   background-color: #1409ED;
   color: #fff;
+  border-radius: 15px;
+  margin: 16px;
+  padding-left: 10px;
 }
 #header-navbar #header-buttons {
   grid-area: "header-buttons";
@@ -422,108 +425,129 @@ textarea {
 ============= */
 #footer {
   background-color: #304093;
+  padding: 16px;
 }
 #footer #footer-links #r1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "a1 a2 a3";
 }
-#footer #footer-links #r1 .a1 .p {
+#footer #footer-links #r1 .a1 p {
   color: #fff;
 }
-#footer #footer-links #r1 .a2 .p {
+#footer #footer-links #r1 .a2 p {
   color: #fff;
+  text-align: center;
 }
-#footer #footer-links #r1 .a3 .p {
+#footer #footer-links #r1 .a3 p {
   color: #fff;
+  text-align: right;
 }
 #footer #footer-links #r2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "b1 b2 b3";
 }
-#footer #footer-links #r2 .b1 .p {
+#footer #footer-links #r2 .b1 p {
   color: #fff;
 }
-#footer #footer-links #r2 .b2 .p {
+#footer #footer-links #r2 .b2 p {
   color: #fff;
+  text-align: center;
 }
-#footer #footer-links #r2 .b3 .p {
+#footer #footer-links #r2 .b3 p {
   color: #fff;
+  text-align: right;
 }
 #footer #footer-links #r3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "c1 c2 c3";
 }
-#footer #footer-links #r3 .c1 .p {
+#footer #footer-links #r3 .c1 p {
   color: #fff;
 }
-#footer #footer-links #r3 .c2 .p {
+#footer #footer-links #r3 .c2 p {
   color: #fff;
+  text-align: center;
 }
-#footer #footer-links #r3 .c3 .p {
+#footer #footer-links #r3 .c3 p {
   color: #fff;
+  text-align: right;
 }
 #footer #footer-links #r4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "d1 d2 d3";
 }
-#footer #footer-links #r4 .d1 .p {
+#footer #footer-links #r4 .d1 p {
   color: #fff;
 }
-#footer #footer-links #r4 .d2 .p {
+#footer #footer-links #r4 .d2 p {
   color: #fff;
+  text-align: center;
 }
-#footer #footer-links #r4 .d3 .p {
+#footer #footer-links #r4 .d3 p {
   color: #fff;
+  text-align: right;
 }
 #footer #bottom-stuff .a {
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "a1 a2 a3 a4 a5";
+  text-align: center;
 }
-#footer #bottom-stuff .a .p {
+#footer #bottom-stuff .a p {
   grid-area: "a1";
 }
-#footer #bottom-stuff .a .p {
+#footer #bottom-stuff .a p {
   grid-area: "a2";
 }
-#footer #bottom-stuff .a .p {
+#footer #bottom-stuff .a p {
   grid-area: "a3";
 }
-#footer #bottom-stuff .a .p {
+#footer #bottom-stuff .a p {
   grid-area: "a4";
 }
-#footer #bottom-stuff .a .p {
+#footer #bottom-stuff .a p {
   grid-area: "a5";
 }
 #footer #bottom-stuff .b {
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "b1 b2 b3 b4";
+  text-align: center;
 }
-#footer #bottom-stuff .b .p {
+#footer #bottom-stuff .b p {
   grid-area: "b1";
 }
-#footer #bottom-stuff .b .p {
+#footer #bottom-stuff .b p {
   grid-area: "b2";
 }
-#footer #bottom-stuff .b .p {
+#footer #bottom-stuff .b p {
   grid-area: "b3";
 }
-#footer #bottom-stuff .b .p {
+#footer #bottom-stuff .b p {
   grid-area: "b4";
 }
 
 #calender {
   margin: 16px;
+  margin-bottom: 168px;
 }
 #calender #calender-title {
   display: grid;
   grid-template-columns: 60% 1fr 1fr;
   grid-template-areas: "events . left-arrow right-arrow";
+}
+@media (min-width: 768px) {
+  #calender #calender-title {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "events";
+  }
 }
 #calender #calender-title p {
   grid-area: "events";
@@ -582,6 +606,8 @@ textarea {
 #calender #actual-calender #calender-events {
   grid-area: "calender-events";
   background-color: #fff;
+  margin: 12px;
+  border-radius: 15px;
 }
 #calender #actual-calender #calender-events #events {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -645,6 +671,7 @@ textarea {
 
 #categories {
   margin: 16px;
+  margin-bottom: 168px;
 }
 #categories #heading #heading2 {
   grid-area: "heading2";
@@ -1012,12 +1039,17 @@ textarea {
 #craigs {
   background-color: #DFEBF8;
 }
-#craigs .craig-header {
+#craigs #craig-header {
   background-color: #72A3FA;
   color: #fff;
   font-size: 24pt;
   padding-top: 30px;
   padding-left: 16px;
+}
+@media (min-width: 768px) {
+  #craigs #craig-header {
+    padding-left: 80px;
+  }
 }
 #craigs #map {
   display: grid;
@@ -1073,6 +1105,7 @@ textarea {
 }
 #craigs #listings .lamp .lamp-img {
   grid-area: "img";
+  margin: 8px;
 }
 #craigs #listings .lamp .lamp-info {
   grid-area: "info";
@@ -1249,10 +1282,9 @@ textarea {
 }
 #craigs #see-more-bundle {
   display: grid;
-  grid-template-columns: 35% auto 35%;
-  grid-template-areas: ". see-more ." ". down-arrow .";
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "see-more" "down-arrow";
+  margin-left: 40%;
 }
 #craigs #see-more-bundle .see-more .p {
   grid-area: "see-more";
@@ -1262,46 +1294,50 @@ textarea {
   grid-area: "down-arrow";
 }
 
-#hero1 #locations-dropdown {
+#hero1 #background-img {
+  background-image: url(img/hero1/hero1.jpg);
+  background-repeat: no-repeat;
+}
+#hero1 #hero1-content #locations-dropdown {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "location . . ";
   grid-area: "location";
 }
-#hero1 #locations-dropdown .location {
+#hero1 #hero1-content #locations-dropdown .location {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "p img";
 }
-#hero1 #locations-dropdown .location .p {
+#hero1 #hero1-content #locations-dropdown .location .p {
   grid-area: "p";
 }
-#hero1 #locations-dropdown .location .img {
+#hero1 #hero1-content #locations-dropdown .location .img {
   grid-area: "img";
 }
-#hero1 .title {
+#hero1 #hero1-content .title {
   display: grid;
   grid-template-columns: 20% 1fr 20%;
   grid-template-areas: " . title . ";
 }
-#hero1 .title .p {
+#hero1 #hero1-content .title .p {
   color: #fff;
   grid-area: "title";
 }
-#hero1 .search-bar {
+#hero1 #hero1-content .search-bar {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-areas: " . search . ";
   grid-area: "search";
 }
-#hero1 .search-bar .search {
+#hero1 #hero1-content .search-bar .search {
   display: grid;
   grid-template-columns: 1fr 20% 1fr;
   grid-template-areas: "p . img";
 }
-#hero1 .search-bar .search .p {
+#hero1 #hero1-content .search-bar .search .p {
   grid-area: "p";
 }
-#hero1 .search-bar .search .img {
+#hero1 #hero1-content .search-bar .search .img {
   grid-area: "img";
 }

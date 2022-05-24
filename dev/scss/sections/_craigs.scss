@@ -3,13 +3,18 @@
 
     background-color: $b2;
 
-    .craig-header{
+    #craig-header{
         background-color: $b5;
         color: $white;
         font-size: 24pt;
         
         padding-top: 30px;
         padding-left: 16px;
+
+        @include md{
+            padding-left: 80px;
+        }
+    
     }
 
     #map{
@@ -98,7 +103,9 @@
 
             .lamp-img{
                 grid-area: "img";
+                margin: 8px;
             }
+
             .lamp-info{
 
                 grid-area: "info";
@@ -360,17 +367,14 @@
     #see-more-bundle{
 
         display: grid;
-        grid-template-columns: 35% auto 35%;
-        grid-template-areas: 
-        ". see-more ."
-        ". down-arrow .";
-
         grid-template-rows: 
         1fr 
         1fr ;
         grid-template-areas: 
         "see-more"
         "down-arrow";
+
+        margin-left: 40%;
 
         .see-more{
 

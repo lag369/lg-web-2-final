@@ -2,12 +2,19 @@
 #calender{
 
     margin: 16px;
+    margin-bottom: 168px;
 
     #calender-title{
 
         display: grid;
         grid-template-columns: 60% 1fr 1fr;
         grid-template-areas: "events . left-arrow right-arrow";
+
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-areas: "events";
+        }
 
         p{
             grid-area: "events";
@@ -93,6 +100,9 @@
 
             grid-area: "calender-events";
             background-color: $white;
+
+            margin: 12px;
+            border-radius: 15px;
 
             #events{
 

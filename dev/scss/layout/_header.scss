@@ -5,13 +5,16 @@
 #header-navbar{
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "title . header-buttons";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title header-buttons";
 
     #title{
         grid-area: "title";
         background-color: $b8;
         color: $white;
+        border-radius: 15px;
+        margin: 16px;
+        padding-left: 10px;
     }
 
     #header-buttons{
