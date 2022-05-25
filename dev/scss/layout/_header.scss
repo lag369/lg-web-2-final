@@ -6,7 +6,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title title header-buttons";
+    grid-template-areas: "title . header-buttons";
 
     #title{
         grid-area: "title";
@@ -14,7 +14,7 @@
         color: $white;
         border-radius: 15px;
         margin: 16px;
-        padding-left: 10px;
+        text-align: center;
     }
 
     #header-buttons{
@@ -23,10 +23,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "search account hamburger";
 
+        margin-top: 16px;
+
         .search{
             grid-area: "search";
             .seabutton{
                 width: 100%;
+                border: none;
+                background-color: $white;
             }
         }
 
@@ -34,6 +38,8 @@
             grid-area: "account";
             .accbutton{
                 width: 100%;
+                border: none;
+                background-color: $white;
             }
         }
 
@@ -41,6 +47,8 @@
             grid-area: "hamburger";
             .hambutton{
                 width: 100%;
+                border: none;
+                background-color: $white;
             }
         }
     }

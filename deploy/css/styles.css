@@ -385,7 +385,7 @@ textarea {
 #header-navbar {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "title title header-buttons";
+  grid-template-areas: "title . header-buttons";
 }
 #header-navbar #title {
   grid-area: "title";
@@ -393,31 +393,38 @@ textarea {
   color: #fff;
   border-radius: 15px;
   margin: 16px;
-  padding-left: 10px;
+  text-align: center;
 }
 #header-navbar #header-buttons {
   grid-area: "header-buttons";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "search account hamburger";
+  margin-top: 16px;
 }
 #header-navbar #header-buttons .search {
   grid-area: "search";
 }
 #header-navbar #header-buttons .search .seabutton {
   width: 100%;
+  border: none;
+  background-color: #fff;
 }
 #header-navbar #header-buttons .account {
   grid-area: "account";
 }
 #header-navbar #header-buttons .account .accbutton {
   width: 100%;
+  border: none;
+  background-color: #fff;
 }
 #header-navbar #header-buttons .hamburger {
   grid-area: "hamburger";
 }
 #header-navbar #header-buttons .hamburger .hambutton {
   width: 100%;
+  border: none;
+  background-color: #fff;
 }
 
 /* =============
@@ -542,13 +549,6 @@ textarea {
   grid-template-columns: 60% 1fr 1fr;
   grid-template-areas: "events . left-arrow right-arrow";
 }
-@media (min-width: 768px) {
-  #calender #calender-title {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "events";
-  }
-}
 #calender #calender-title p {
   grid-area: "events";
   font-size: 24pt;
@@ -561,19 +561,26 @@ textarea {
   grid-area: "right-arrow";
 }
 #calender #actual-calender {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-areas: "calender-days calender-events";
   border-radius: 15px;
   background-color: #72A3FA;
 }
+@media (min-width: 576px) {
+  #calender #actual-calender {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "calender-days calender-events";
+  }
+}
 #calender #actual-calender #calender-days {
   grid-area: "calender-days";
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "sunday" "monday" "tuesday" "wednesday" "thursday" "friday" "saturday";
-  margin: 16px;
-  align-items: center;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  #calender #actual-calender #calender-days {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sunday" "monday" "tuesday" "wednesday" "thursday" "friday" "saturday";
+  }
 }
 #calender #actual-calender #calender-days .r1 {
   grid-area: "day1";
@@ -610,8 +617,9 @@ textarea {
   border-radius: 15px;
 }
 #calender #actual-calender #calender-events #events {
+  display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: " . day1" "day2 . " "day3 . " " . day4" " . day5" "day6 day6" "day7 . ";
+  grid-template-areas: " . paint" "auto . " "waffle . " " . some" " . fundraiser" "fundraiser auto" "paint . ";
   padding: 16px;
   border-radius: 15px;
 }
@@ -672,6 +680,10 @@ textarea {
 #categories {
   margin: 16px;
   margin-bottom: 168px;
+}
+#categories #heading {
+  text-align: center;
+  margin-left: 80px;
 }
 #categories #heading #heading2 {
   grid-area: "heading2";
@@ -754,7 +766,18 @@ textarea {
 #categories #categories-icons {
   background-color: #C8E2FE;
   border-radius: 16px;
-  font-size: 9pt;
+}
+@media (min-width: 576px) {
+  #categories #categories-icons {
+    font-size: 9pt;
+  }
+}
+@media (min-width: 768px) {
+  #categories #categories-icons {
+    font-size: 16pt;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }
 #categories #categories-icons #icons-r1 {
   display: grid;
@@ -767,8 +790,18 @@ textarea {
   border-radius: 16px;
   text-align: center;
   padding-top: 24px;
-  margin-right: 15%;
-  margin: 10%;
+}
+@media (min-width: 576px) {
+  #categories #categories-icons #icons-r1 .a1 {
+    margin-right: 15%;
+    margin: 10%;
+  }
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r1 .a1 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r1 .a1 p {
   color: #fff;
@@ -779,7 +812,18 @@ textarea {
   border-radius: 16px;
   text-align: center;
   padding-top: 16px;
-  margin: 10%;
+}
+@media (min-width: 576px) {
+  #categories #categories-icons #icons-r1 .a2 {
+    margin-right: 15%;
+    margin: 10%;
+  }
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r1 .a2 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r1 .a2 p {
   color: #fff;
@@ -790,7 +834,18 @@ textarea {
   border-radius: 16px;
   text-align: center;
   padding-top: 16px;
-  margin: 10%;
+}
+@media (min-width: 576px) {
+  #categories #categories-icons #icons-r1 .a3 {
+    margin-right: 15%;
+    margin: 10%;
+  }
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r1 .a3 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r1 .a3 p {
   color: #fff;
@@ -801,7 +856,18 @@ textarea {
   border-radius: 16px;
   text-align: center;
   padding-top: 16px;
-  margin: 10%;
+}
+@media (min-width: 576px) {
+  #categories #categories-icons #icons-r1 .a4 {
+    margin-right: 15%;
+    margin: 10%;
+  }
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r1 .a4 {
+    margin-top: 10%;
+    margin-right: 10%;
+  }
 }
 #categories #categories-icons #icons-r1 .a4 p {
   color: #fff;
@@ -820,6 +886,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r2 .b1 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r2 .b1 p {
   color: #fff;
 }
@@ -831,6 +903,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r2 .b2 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r2 .b2 p {
   color: #fff;
@@ -844,6 +922,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r2 .b3 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r2 .b3 p {
   color: #fff;
 }
@@ -855,6 +939,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r2 .b4 {
+    margin-top: 10%;
+    margin-right: 10%;
+  }
 }
 #categories #categories-icons #icons-r2 .b4 p {
   color: #fff;
@@ -873,6 +963,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r3 .c1 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r3 .c1 p {
   color: #fff;
 }
@@ -884,6 +980,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r3 .c2 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r3 .c2 p {
   color: #fff;
@@ -897,6 +999,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r3 .c3 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r3 .c3 p {
   color: #fff;
 }
@@ -908,6 +1016,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r3 .c4 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r3 .c4 p {
   color: #fff;
@@ -926,6 +1040,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r4 .d1 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r4 .d1 p {
   color: #fff;
 }
@@ -937,6 +1057,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r4 .d2 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r4 .d2 p {
   color: #fff;
@@ -950,6 +1076,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r4 .d3 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r4 .d3 p {
   color: #fff;
 }
@@ -961,6 +1093,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r4 .d4 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r4 .d4 p {
   color: #fff;
@@ -979,6 +1117,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r5 .e1 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r5 .e1 p {
   color: #fff;
 }
@@ -990,6 +1134,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r5 .e2 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r5 .e2 p {
   color: #fff;
@@ -1003,6 +1153,12 @@ textarea {
   padding-top: 16px;
   margin: 10%;
 }
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r5 .e3 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+}
 #categories #categories-icons #icons-r5 .e3 p {
   color: #fff;
 }
@@ -1014,6 +1170,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r5 .e4 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r5 .e4 p {
   color: #fff;
@@ -1031,6 +1193,12 @@ textarea {
   text-align: center;
   padding-top: 16px;
   margin: 10%;
+}
+@media (min-width: 768px) {
+  #categories #categories-icons #icons-r6 .f1 {
+    margin-top: 10%;
+    margin-right: 5%;
+  }
 }
 #categories #categories-icons #icons-r6 .f1 p {
   color: #fff;
@@ -1052,13 +1220,20 @@ textarea {
   }
 }
 #craigs #map {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: " . mapimg . " " . map-buttons . ";
   background-color: #3F68F0;
   border-radius: 16px;
   margin: 16px;
+}
+@media (min-width: 768px) {
+  #craigs #map {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+#craigs #map .map-image {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: " . mapimg . " " . map-buttons . ";
 }
 #craigs #map .map-image .img {
   grid-area: "mapimg";
@@ -1066,13 +1241,16 @@ textarea {
 }
 #craigs #map #map-stuff {
   grid-area: "map-buttons";
+  margin-bottom: 8px;
+  background-color: #72A3FA;
+  border-radius: 16px;
 }
 #craigs #map #map-stuff .map-buttons {
   display: grid;
   grid-template-columns: 10% 60% 10% 10% 10%;
   grid-template-areas: "dots . location filter settings";
-  background-color: #72A3FA;
-  border-radius: 16px;
+  padding: 8px;
+  margin: 8px;
 }
 #craigs #map #map-stuff .map-buttons .img {
   grid-area: "dots";
@@ -1093,6 +1271,12 @@ textarea {
   grid-template-areas: "lamp chair" "dresser dresser2" "couch shelf";
   margin: 16px;
 }
+@media (min-width: 768px) {
+  #craigs #listings {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 #craigs #listings .lamp {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -1102,6 +1286,7 @@ textarea {
   margin-right: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  padding: 20px;
 }
 #craigs #listings .lamp .lamp-img {
   grid-area: "img";

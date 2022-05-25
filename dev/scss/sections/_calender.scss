@@ -10,12 +10,6 @@
         grid-template-columns: 60% 1fr 1fr;
         grid-template-areas: "events . left-arrow right-arrow";
 
-        @include md{
-            display: grid;
-            grid-template-columns: 1fr ;
-            grid-template-areas: "events";
-        }
-
         p{
             grid-area: "events";
             font-size: 24pt;
@@ -31,9 +25,13 @@
 
     #actual-calender{
 
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-areas: "calender-days calender-events";
+        @include sm{
+
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-areas: "calender-days calender-events";
+
+        }
 
         border-radius: 15px;
 
@@ -42,29 +40,31 @@
         #calender-days{
 
             grid-area: "calender-days";
+
+            @include sm{
     
-            display: grid;
+                display: grid;
+    
+                grid-template-rows: 
+                1fr
+                1fr
+                1fr
+                1fr
+                1fr
+                1fr
+                1fr;
+                grid-template-areas: 
+                "sunday"
+                "monday"
+                "tuesday"
+                "wednesday"
+                "thursday"
+                "friday"
+                "saturday";
 
-            grid-template-rows: 
-            1fr
-            1fr
-            1fr
-            1fr
-            1fr
-            1fr
-            1fr;
-            grid-template-areas: 
-            "sunday"
-            "monday"
-            "tuesday"
-            "wednesday"
-            "thursday"
-            "friday"
-            "saturday";
+            }
 
-
-            margin: 16px;
-            align-items: center;
+            text-align: center;
 
             .r1{
                 grid-area: "day1";
@@ -106,6 +106,7 @@
 
             #events{
 
+                display: grid;
                 grid-template-rows: 
                 1fr 1fr
                 1fr 1fr
@@ -115,14 +116,13 @@
                 1fr 1fr
                 1fr 1fr;
                 grid-template-areas: 
-                " . day1"
-                "day2 . "
-                "day3 . "
-                " . day4"
-                " . day5"
-                "day6 day6"
-                "day7 . ";
-
+                " . paint"
+                "auto . "
+                "waffle . "
+                " . some"
+                " . fundraiser"
+                "fundraiser auto"
+                "paint . ";
 
                 padding: 16px;
                 border-radius: 15px;
