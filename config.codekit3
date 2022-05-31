@@ -34,14 +34,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/html\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/html\/index.html",
-      "oF" : 0
-    },
     "\/deploy\/img\/calender\/left-arrow.png" : {
       "ft" : 32768,
       "iS" : 377,
@@ -750,13 +742,187 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/deploy\/img\/profile\/hero-1\/city-skyline.jpg" : {
+      "ft" : 16384,
+      "iS" : 257988,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/img\/profile\/hero-1\/city-skyline.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/hero-1\/profilephoto.png" : {
+      "ft" : 32768,
+      "iS" : 4590,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/hero-1\/profilephoto.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/airmattress.jpg" : {
+      "ft" : 16384,
+      "iS" : 25343,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/airmattress.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/bike.jpg" : {
+      "ft" : 16384,
+      "iS" : 31900,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/bike.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/bookmark.png" : {
+      "ft" : 32768,
+      "iS" : 443,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/bookmark.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/bought.png" : {
+      "ft" : 32768,
+      "iS" : 624,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/bought.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/chair.jpg" : {
+      "ft" : 16384,
+      "iS" : 24393,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/chair.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/nightstand.jpg" : {
+      "ft" : 16384,
+      "iS" : 24667,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/nightstand.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/reviews.png" : {
+      "ft" : 32768,
+      "iS" : 516,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/reviews.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/sold.png" : {
+      "ft" : 32768,
+      "iS" : 1094,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/sold.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/reviews\/bike2.jpg" : {
+      "ft" : 16384,
+      "iS" : 18554,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/reviews\/bike2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/reviews\/chair2.jpg" : {
+      "ft" : 16384,
+      "iS" : 16508,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/reviews\/chair2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/reviews\/rating.png" : {
+      "ft" : 32768,
+      "iS" : 550,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/reviews\/rating.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/reviews\/table.jpg" : {
+      "ft" : 16384,
+      "iS" : 19220,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/reviews\/table.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/js\/scripts-min.js" : {
       "bF" : 0,
@@ -769,13 +935,13 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/html\/index.html" : {
+    "\/deploy\/profile-html\/profile.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/html\/index.html",
-      "oF" : 1
+      "oAP" : "\/deploy\/profile-html\/profile.html",
+      "oF" : 0
     },
     "\/dev\/index.html" : {
       "cB" : 0,
@@ -795,6 +961,14 @@
       "oF" : 2,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/profile-html\/profile.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/profile-html\/profile.html",
+      "oF" : 3
     },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
