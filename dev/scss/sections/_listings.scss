@@ -1,0 +1,240 @@
+
+
+.listings{
+    
+    .listings-buttons{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "bookmark sold bought reviews";
+
+        .bookmark{
+            grid-area: "bookmark";
+            background-color: $b7;
+            border-radius: 16px;
+
+        }
+        .sold{
+            grid-area: "sold";
+            background-color: $b7;
+            border-radius: 16px;
+
+        }
+        .bought{
+            grid-area: "bought";
+            background-color: $b7;
+            border-radius: 16px;
+
+        }
+        .reviews{
+            grid-area: "reviews";
+            background-color: $b7;
+            border-radius: 16px;
+
+        }
+    }
+
+    .actual-listings{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "bike nightstand"
+        "mattress chair"
+        "sofa book";
+
+        .bike-listing{
+
+            grid-area: "bike";
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "img"
+            "info";
+
+            .img{
+                grid-area: "img";
+            }
+
+            .info{
+
+                grid-area: "info";
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "listing bookmark";
+
+                .img{
+                    grid-area: "listing";
+                }
+                .p{
+                    grid-area: "bookmark";
+                }
+
+            }
+
+        }
+        .nightstand-listing{
+
+            grid-area: "nightstand";
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "img"
+            "info";
+
+            .img{
+                grid-area: "img";
+            }
+
+            .info{
+
+                grid-area: "info";
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "listing bookmark";
+
+                .img{
+                    grid-area: "listing";
+                }
+                .p{
+                    grid-area: "bookmark";
+                }
+                
+            }
+
+        }
+        .airmattress-listing{
+
+            grid-area: "mattress";
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "img"
+            "info";
+
+            .img{
+                grid-area: "img";
+            }
+
+            .info{
+
+                grid-area: "info";
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "listing bookmark";
+
+                .img{
+                    grid-area: "listing";
+                }
+                .p{
+                    grid-area: "bookmark";
+                }
+                
+            }
+
+        }
+        .chair-listing{
+
+            grid-area: "chair";
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "img"
+            "info";
+
+            .img{
+                grid-area: "img";
+            }
+
+            .info{
+
+                grid-area: "info";
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "listing bookmark";
+
+                .img{
+                    grid-area: "listing";
+                }
+                .p{
+                    grid-area: "bookmark";
+                }
+                
+            }
+
+        }
+        .sofa-listing{
+
+            grid-area: "sofa";
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "img"
+            "info";
+
+            .img{
+                grid-area: "img";
+            }
+
+            .info{
+
+                grid-area: "info";
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "listing bookmark";
+
+                .img{
+                    grid-area: "listing";
+                }
+                .p{
+                    grid-area: "bookmark";
+                }
+                
+            }
+
+        }
+        .book-listing{
+
+            grid-area: "book";
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "img"
+            "info";
+
+            .img{
+                grid-area: "img";
+            }
+
+            .info{
+
+                grid-area: "info";
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "listing bookmark";
+
+                .img{
+                    grid-area: "listing";
+                }
+                .p{
+                    grid-area: "bookmark";
+                }
+                
+            }
+
+        }
+    }
+}

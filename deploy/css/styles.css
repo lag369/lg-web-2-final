@@ -1526,3 +1526,160 @@ textarea {
 #hero1 #hero1-content .search-bar .search .img {
   grid-area: "img";
 }
+
+.listings .listings-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "bookmark sold bought reviews";
+}
+.listings .listings-buttons .bookmark {
+  grid-area: "bookmark";
+  background-color: #314DE0;
+  border-radius: 16px;
+}
+.listings .listings-buttons .sold {
+  grid-area: "sold";
+  background-color: #314DE0;
+  border-radius: 16px;
+}
+.listings .listings-buttons .bought {
+  grid-area: "bought";
+  background-color: #314DE0;
+  border-radius: 16px;
+}
+.listings .listings-buttons .reviews {
+  grid-area: "reviews";
+  background-color: #314DE0;
+  border-radius: 16px;
+}
+.listings .actual-listings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "bike nightstand" "mattress chair" "sofa book";
+}
+.listings .actual-listings .bike-listing {
+  grid-area: "bike";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "info";
+}
+.listings .actual-listings .bike-listing .img {
+  grid-area: "img";
+}
+.listings .actual-listings .bike-listing .info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "listing bookmark";
+}
+.listings .actual-listings .bike-listing .info .img {
+  grid-area: "listing";
+}
+.listings .actual-listings .bike-listing .info .p {
+  grid-area: "bookmark";
+}
+.listings .actual-listings .nightstand-listing {
+  grid-area: "nightstand";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "info";
+}
+.listings .actual-listings .nightstand-listing .img {
+  grid-area: "img";
+}
+.listings .actual-listings .nightstand-listing .info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "listing bookmark";
+}
+.listings .actual-listings .nightstand-listing .info .img {
+  grid-area: "listing";
+}
+.listings .actual-listings .nightstand-listing .info .p {
+  grid-area: "bookmark";
+}
+.listings .actual-listings .airmattress-listing {
+  grid-area: "mattress";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "info";
+}
+.listings .actual-listings .airmattress-listing .img {
+  grid-area: "img";
+}
+.listings .actual-listings .airmattress-listing .info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "listing bookmark";
+}
+.listings .actual-listings .airmattress-listing .info .img {
+  grid-area: "listing";
+}
+.listings .actual-listings .airmattress-listing .info .p {
+  grid-area: "bookmark";
+}
+.listings .actual-listings .chair-listing {
+  grid-area: "chair";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "info";
+}
+.listings .actual-listings .chair-listing .img {
+  grid-area: "img";
+}
+.listings .actual-listings .chair-listing .info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "listing bookmark";
+}
+.listings .actual-listings .chair-listing .info .img {
+  grid-area: "listing";
+}
+.listings .actual-listings .chair-listing .info .p {
+  grid-area: "bookmark";
+}
+.listings .actual-listings .sofa-listing {
+  grid-area: "sofa";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "info";
+}
+.listings .actual-listings .sofa-listing .img {
+  grid-area: "img";
+}
+.listings .actual-listings .sofa-listing .info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "listing bookmark";
+}
+.listings .actual-listings .sofa-listing .info .img {
+  grid-area: "listing";
+}
+.listings .actual-listings .sofa-listing .info .p {
+  grid-area: "bookmark";
+}
+.listings .actual-listings .book-listing {
+  grid-area: "book";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "info";
+}
+.listings .actual-listings .book-listing .img {
+  grid-area: "img";
+}
+.listings .actual-listings .book-listing .info {
+  grid-area: "info";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "listing bookmark";
+}
+.listings .actual-listings .book-listing .info .img {
+  grid-area: "listing";
+}
+.listings .actual-listings .book-listing .info .p {
+  grid-area: "bookmark";
+}

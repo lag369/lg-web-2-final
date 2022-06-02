@@ -1,0 +1,36 @@
+
+
+.profile{
+
+    .profile-content{
+
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        " . profile-photo . "
+        "username . . "
+        "location . . "
+        "bio . . "
+        "website . . ";
+
+        .profile-photo{
+            grid-area: "profile-photo";
+        }
+     
+        .username-input{
+            grid-area: "username";
+        }
+
+        .location-input{
+            grid-area: "location";
+        }
+
+        .bio-input{
+            grid-area: "bio";
+        }
+
+        .website-input{
+            grid-area: "website";
+        }
+    }
+}
