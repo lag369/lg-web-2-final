@@ -1683,3 +1683,66 @@ textarea {
 .listings .actual-listings .book-listing .info .p {
   grid-area: "bookmark";
 }
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "review1" "review2" "review3";
+}
+.reviews .reviews-header {
+  margin: 16px;
+}
+.reviews .review1 {
+  grid-area: "review1";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img head . rating" "img body body body";
+}
+.reviews .review1 .chair2 {
+  grid-area: "img";
+}
+.reviews .review1 .info1-head {
+  grid-area: "head";
+}
+.reviews .review1 .rating {
+  grid-area: "rating";
+}
+.reviews .review1 .info1-body {
+  grid-area: "body";
+}
+.reviews .review2 {
+  grid-area: "review2";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img head . rating" "img body body body";
+}
+.reviews .review2 .chair2 {
+  grid-area: "img";
+}
+.reviews .review2 .info1-head {
+  grid-area: "head";
+}
+.reviews .review2 .rating {
+  grid-area: "rating";
+}
+.reviews .review2 .info1-body {
+  grid-area: "body";
+}
+.reviews .review3 {
+  grid-area: "review3";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img head . rating" "img body body body";
+}
+.reviews .review3 .chair2 {
+  grid-area: "img";
+}
+.reviews .review3 .info1-head {
+  grid-area: "head";
+}
+.reviews .review3 .rating {
+  grid-area: "rating";
+}
+.reviews .review3 .info1-body {
+  grid-area: "body";
+}

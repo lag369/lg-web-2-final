@@ -4,25 +4,86 @@
 
     .reviews-header{
 
+        margin: 16px;
+
     }
 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "review1"
+    "review2"
+    "review3";
+
     .review1{
+
+        grid-area: "review1";
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img head . rating"
+        "img body body body";
         
         .chair2{
-
+            grid-area: "img";
         }
         .info1-head{
-
+            grid-area: "head";
         }
+            .rating{
+                grid-area: "rating";
+            }
         .info1-body{
-
+            grid-area: "body";
         }
 
     }
     .review2{
 
+        grid-area: "review2";
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img head . rating"
+        "img body body body";
+        
+        .chair2{
+            grid-area: "img";
+        }
+        .info1-head{
+            grid-area: "head";
+        }
+            .rating{
+                grid-area: "rating";
+            }
+        .info1-body{
+            grid-area: "body";
+        }
     }
     .review3{
+
+        grid-area: "review3";
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img head . rating"
+        "img body body body";
+        
+        .chair2{
+            grid-area: "img";
+        }
+        .info1-head{
+            grid-area: "head";
+        }
+            .rating{
+                grid-area: "rating";
+            }
+        .info1-body{
+            grid-area: "body";
+        }
 
     }
 }
