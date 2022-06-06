@@ -4,7 +4,9 @@
 
     .reviews-header{
 
-        margin: 16px;
+        padding: 16px;
+        color: $b7;
+        background-color: $b5;
 
     }
 
@@ -15,6 +17,8 @@
     "review2"
     "review3";
 
+    background: $b2;
+
     .review1{
 
         grid-area: "review1";
@@ -22,18 +26,26 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "img head . rating"
-        "img body body body";
+        "img . head"
+        "img body body";
+
+        margin: 16px;
+        background-color: $b7;
+        border-radius: 16px;
+        color: #fff;
+        padding: 8px;
         
         .chair2{
             grid-area: "img";
         }
         .info1-head{
             grid-area: "head";
-        }
+
             .rating{
                 grid-area: "rating";
             }
+        }
+
         .info1-body{
             grid-area: "body";
         }
@@ -46,8 +58,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "img head . rating"
-        "img body body body";
+        "img . head"
+        "img body body";
+
+        margin: 16px;
+        background-color: $b7;
+        border-radius: 16px;
+        color: #fff;
+        padding: 8px;
         
         .chair2{
             grid-area: "img";
@@ -69,8 +87,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "img head . rating"
-        "img body body body";
+        "img . head"
+        "img body body";
+
+        margin: 16px;
+        background-color: $b7;
+        border-radius: 16px;
+        color: #fff;
+        padding: 8px;
         
         .chair2{
             grid-area: "img";

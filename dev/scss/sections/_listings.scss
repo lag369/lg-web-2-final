@@ -13,26 +13,40 @@
             grid-area: "bookmark";
             background-color: $b7;
             border-radius: 16px;
+            margin-left: 16px;
+            margin-right: 8px;
+            padding: 14px;
+
 
         }
         .sold{
             grid-area: "sold";
             background-color: $b7;
             border-radius: 16px;
+            margin-right: 8px;
+            margin-left: 8px;
+            padding: 14px;
 
         }
         .bought{
             grid-area: "bought";
             background-color: $b7;
             border-radius: 16px;
+            margin-right: 8px;
+            margin-left: 8px;
+            padding: 14px;
 
         }
         .reviews{
             grid-area: "reviews";
             background-color: $b7;
             border-radius: 16px;
+            margin-right: 16px;
+            margin-left: 8px;
+            padding: 14px;
 
         }
+        margin-bottom: 32px;
     }
 
     .actual-listings{
@@ -54,8 +68,14 @@
             "img"
             "info";
 
+            background-color: $b7;
+            padding: 10px;
+            margin: 16px;
+            border-radius: 16px;
+
             .img{
                 grid-area: "img";
+                padding: 4px;
             }
 
             .info{
@@ -65,6 +85,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "listing bookmark";
+                color: #fff;
 
                 .img{
                     grid-area: "listing";
@@ -86,6 +107,11 @@
             "img"
             "info";
 
+            background-color: $b7;
+            margin: 16px;
+            border-radius: 16px;
+            padding: 10px;
+
             .img{
                 grid-area: "img";
             }
@@ -97,6 +123,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "listing bookmark";
+                color: #fff;
 
                 .img{
                     grid-area: "listing";
@@ -118,6 +145,11 @@
             "img"
             "info";
 
+            background-color: $b7;
+            margin: 16px;
+            padding: 10px;
+            border-radius: 16px;
+
             .img{
                 grid-area: "img";
             }
@@ -129,6 +161,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "listing bookmark";
+                color: #fff;
 
                 .img{
                     grid-area: "listing";
@@ -150,6 +183,11 @@
             "img"
             "info";
 
+            background-color: $b7;
+            margin: 16px;
+            padding: 10px;
+            border-radius: 16px;
+
             .img{
                 grid-area: "img";
             }
@@ -161,6 +199,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "listing bookmark";
+                color: #fff;
 
                 .img{
                     grid-area: "listing";
@@ -182,6 +221,11 @@
             "img"
             "info";
 
+            background-color: $b7;
+            margin: 16px;
+            padding: 10px;
+            border-radius: 16px;
+
             .img{
                 grid-area: "img";
             }
@@ -193,6 +237,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "listing bookmark";
+                color: #fff;
 
                 .img{
                     grid-area: "listing";
@@ -214,6 +259,11 @@
             "img"
             "info";
 
+            background-color: $b7;
+            margin: 16px;
+            padding: 10px;
+            border-radius: 16px;
+
             .img{
                 grid-area: "img";
             }
@@ -225,6 +275,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "listing bookmark";
+                color: #fff;
 
                 .img{
                     grid-area: "listing";

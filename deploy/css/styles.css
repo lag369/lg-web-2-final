@@ -1531,26 +1531,39 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "bookmark sold bought reviews";
+  margin-bottom: 32px;
 }
 .listings .listings-buttons .bookmark {
   grid-area: "bookmark";
   background-color: #314DE0;
   border-radius: 16px;
+  margin-left: 16px;
+  margin-right: 8px;
+  padding: 14px;
 }
 .listings .listings-buttons .sold {
   grid-area: "sold";
   background-color: #314DE0;
   border-radius: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 14px;
 }
 .listings .listings-buttons .bought {
   grid-area: "bought";
   background-color: #314DE0;
   border-radius: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 14px;
 }
 .listings .listings-buttons .reviews {
   grid-area: "reviews";
   background-color: #314DE0;
   border-radius: 16px;
+  margin-right: 16px;
+  margin-left: 8px;
+  padding: 14px;
 }
 .listings .actual-listings {
   display: grid;
@@ -1562,15 +1575,21 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "img" "info";
+  background-color: #314DE0;
+  padding: 10px;
+  margin: 16px;
+  border-radius: 16px;
 }
 .listings .actual-listings .bike-listing .img {
   grid-area: "img";
+  padding: 4px;
 }
 .listings .actual-listings .bike-listing .info {
   grid-area: "info";
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "listing bookmark";
+  color: #fff;
 }
 .listings .actual-listings .bike-listing .info .img {
   grid-area: "listing";
@@ -1583,6 +1602,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "img" "info";
+  background-color: #314DE0;
+  margin: 16px;
+  border-radius: 16px;
+  padding: 10px;
 }
 .listings .actual-listings .nightstand-listing .img {
   grid-area: "img";
@@ -1592,6 +1615,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "listing bookmark";
+  color: #fff;
 }
 .listings .actual-listings .nightstand-listing .info .img {
   grid-area: "listing";
@@ -1604,6 +1628,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "img" "info";
+  background-color: #314DE0;
+  margin: 16px;
+  padding: 10px;
+  border-radius: 16px;
 }
 .listings .actual-listings .airmattress-listing .img {
   grid-area: "img";
@@ -1613,6 +1641,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "listing bookmark";
+  color: #fff;
 }
 .listings .actual-listings .airmattress-listing .info .img {
   grid-area: "listing";
@@ -1625,6 +1654,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "img" "info";
+  background-color: #314DE0;
+  margin: 16px;
+  padding: 10px;
+  border-radius: 16px;
 }
 .listings .actual-listings .chair-listing .img {
   grid-area: "img";
@@ -1634,6 +1667,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "listing bookmark";
+  color: #fff;
 }
 .listings .actual-listings .chair-listing .info .img {
   grid-area: "listing";
@@ -1646,6 +1680,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "img" "info";
+  background-color: #314DE0;
+  margin: 16px;
+  padding: 10px;
+  border-radius: 16px;
 }
 .listings .actual-listings .sofa-listing .img {
   grid-area: "img";
@@ -1655,6 +1693,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "listing bookmark";
+  color: #fff;
 }
 .listings .actual-listings .sofa-listing .info .img {
   grid-area: "listing";
@@ -1667,6 +1706,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "img" "info";
+  background-color: #314DE0;
+  margin: 16px;
+  padding: 10px;
+  border-radius: 16px;
 }
 .listings .actual-listings .book-listing .img {
   grid-area: "img";
@@ -1676,6 +1719,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "listing bookmark";
+  color: #fff;
 }
 .listings .actual-listings .book-listing .info .img {
   grid-area: "listing";
@@ -1688,15 +1732,23 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "review1" "review2" "review3";
+  background: #DFEBF8;
 }
 .reviews .reviews-header {
-  margin: 16px;
+  padding: 16px;
+  color: #314DE0;
+  background-color: #72A3FA;
 }
 .reviews .review1 {
   grid-area: "review1";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "img head . rating" "img body body body";
+  grid-template-areas: "img . head" "img body body";
+  margin: 16px;
+  background-color: #314DE0;
+  border-radius: 16px;
+  color: #fff;
+  padding: 8px;
 }
 .reviews .review1 .chair2 {
   grid-area: "img";
@@ -1704,7 +1756,7 @@ textarea {
 .reviews .review1 .info1-head {
   grid-area: "head";
 }
-.reviews .review1 .rating {
+.reviews .review1 .info1-head .rating {
   grid-area: "rating";
 }
 .reviews .review1 .info1-body {
@@ -1714,7 +1766,12 @@ textarea {
   grid-area: "review2";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "img head . rating" "img body body body";
+  grid-template-areas: "img . head" "img body body";
+  margin: 16px;
+  background-color: #314DE0;
+  border-radius: 16px;
+  color: #fff;
+  padding: 8px;
 }
 .reviews .review2 .chair2 {
   grid-area: "img";
@@ -1732,7 +1789,12 @@ textarea {
   grid-area: "review3";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "img head . rating" "img body body body";
+  grid-template-areas: "img . head" "img body body";
+  margin: 16px;
+  background-color: #314DE0;
+  border-radius: 16px;
+  color: #fff;
+  padding: 8px;
 }
 .reviews .review3 .chair2 {
   grid-area: "img";

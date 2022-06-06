@@ -794,6 +794,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/profile\/listings\/book.jpg" : {
+      "ft" : 16384,
+      "iS" : 18618,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/book.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/profile\/listings\/bookmark.png" : {
       "ft" : 32768,
       "iS" : 443,
@@ -855,6 +868,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/profile\/listings\/sofa.jpg" : {
+      "ft" : 16384,
+      "iS" : 23401,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/profile\/listings\/sofa.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -923,6 +949,14 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 0
     },
     "\/deploy\/js\/scripts-min.js" : {
       "bF" : 0,
