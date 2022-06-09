@@ -564,10 +564,10 @@ textarea {
   font-size: 24pt;
   color: #314DE0;
 }
-#calender #calender-title .img {
+#calender #calender-title #left-arrow {
   grid-area: "left-arrow";
 }
-#calender #calender-title .img {
+#calender #calender-title #right-arrow {
   grid-area: "right-arrow";
 }
 #calender #actual-calender {
@@ -1336,6 +1336,9 @@ textarea {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "name bookmark" "location . ";
   color: #fff;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 8px;
 }
 #craigs #listings .lamp .lamp-info .p {
   grid-area: "name";
@@ -1368,6 +1371,9 @@ textarea {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "name bookmark" "location . ";
   color: #fff;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 8px;
 }
 #craigs #listings .chair .chair-info .p {
   grid-area: "name";
@@ -1400,6 +1406,9 @@ textarea {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "name bookmark" "location . ";
   color: #fff;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 8px;
 }
 #craigs #listings .dresser .dresser-info .p {
   grid-area: "name";
@@ -1432,6 +1441,9 @@ textarea {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "name bookmark" "location . ";
   color: #fff;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 8px;
 }
 #craigs #listings .dresser2 .dresser2-info .p {
   grid-area: "name";
@@ -1464,6 +1476,9 @@ textarea {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "name bookmark" "location . ";
   color: #fff;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 8px;
 }
 #craigs #listings .couch .couch-info .p {
   grid-area: "name";
@@ -1496,6 +1511,9 @@ textarea {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "name bookmark" "location . ";
   color: #fff;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 8px;
 }
 #craigs #listings .shelf-thing .shelf-info .p {
   grid-area: "name";
@@ -1547,8 +1565,9 @@ textarea {
 #hero1 #hero1-content #locations-dropdown .location .p {
   grid-area: "p";
 }
-#hero1 #hero1-content #locations-dropdown .location .img {
+#hero1 #hero1-content #locations-dropdown .location .button {
   grid-area: "img";
+  padding: 8px;
 }
 #hero1 #hero1-content .title {
   display: grid;
