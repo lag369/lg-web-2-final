@@ -1,8 +1,20 @@
 
 #calender{
 
-    margin: 16px;
+    
     margin-bottom: 168px;
+    margin-top: 20%;
+
+    @include sm{
+
+        margin: 20px;
+
+    }
+
+    @include md{
+
+        margin: 50px;
+    }
 
     #calender-title{
 
@@ -33,25 +45,28 @@
 
         }
 
+        @include md{
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "calender-days"
+            "calender-events";
+        }
+
         border-radius: 15px;
 
         background-color: $b5;
 
         #calender-days{
 
-            grid-area: "calender-days";
-
             @include sm{
     
                 display: grid;
+
+                grid-area: "calender-days";
     
-                grid-template-rows: 
-                1fr
-                1fr
-                1fr
-                1fr
-                1fr
-                1fr
+                grid-template-columns: 
                 1fr;
                 grid-template-areas: 
                 "sunday"
@@ -62,6 +77,14 @@
                 "friday"
                 "saturday";
 
+            }
+
+            @include md{
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                "day1 day2 day3 day4 day5 day6 day7";
             }
 
             text-align: center;
@@ -106,29 +129,35 @@
 
             #events{
 
-                display: grid;
-                grid-template-rows: 
-                1fr 1fr
-                1fr 1fr
-                1fr 1fr
-                1fr 1fr
-                1fr 1fr
-                1fr 1fr
-                1fr 1fr;
-                grid-template-areas: 
-                " . paint"
-                "auto . "
-                "waffle . "
-                " . some"
-                " . fundraiser"
-                "fundraiser auto"
-                "paint . ";
+               @include sm{
+                    display: grid;
+                    grid-template-columns: 
+                    1fr 1fr;
+                    grid-template-areas: 
+                    " . paint"
+                    "auto . "
+                    "waffle . "
+                    " . some"
+                    " . fundraiser"
+                    "fundraiser auto"
+                    "paint . ";
+                }
 
-                padding: 16px;
+                @include md{
+
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "sunday monday tuesday wednesday thursday friday saturday";
+                }
+
+                padding: 10px;
                 border-radius: 15px;
+                color: $b7;
                 
                 .sunday{
                     grid-area: "sunday";
+
                     .paint{
                         grid-area: "paint";
                         background-color: $white;

@@ -541,8 +541,18 @@ textarea {
 }
 
 #calender {
-  margin: 16px;
   margin-bottom: 168px;
+  margin-top: 20%;
+}
+@media (min-width: 576px) {
+  #calender {
+    margin: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #calender {
+    margin: 50px;
+  }
 }
 #calender #calender-title {
   display: grid;
@@ -571,15 +581,29 @@ textarea {
     grid-template-areas: "calender-days calender-events";
   }
 }
+@media (min-width: 768px) {
+  #calender #actual-calender {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "calender-days" "calender-events";
+  }
+}
 #calender #actual-calender #calender-days {
-  grid-area: "calender-days";
   text-align: center;
 }
 @media (min-width: 576px) {
   #calender #actual-calender #calender-days {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-area: "calender-days";
+    grid-template-columns: 1fr;
     grid-template-areas: "sunday" "monday" "tuesday" "wednesday" "thursday" "friday" "saturday";
+  }
+}
+@media (min-width: 768px) {
+  #calender #actual-calender #calender-days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "day1 day2 day3 day4 day5 day6 day7";
   }
 }
 #calender #actual-calender #calender-days .r1 {
@@ -617,11 +641,23 @@ textarea {
   border-radius: 15px;
 }
 #calender #actual-calender #calender-events #events {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: " . paint" "auto . " "waffle . " " . some" " . fundraiser" "fundraiser auto" "paint . ";
-  padding: 16px;
+  padding: 10px;
   border-radius: 15px;
+  color: #314DE0;
+}
+@media (min-width: 576px) {
+  #calender #actual-calender #calender-events #events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " . paint" "auto . " "waffle . " " . some" " . fundraiser" "fundraiser auto" "paint . ";
+  }
+}
+@media (min-width: 768px) {
+  #calender #actual-calender #calender-events #events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sunday monday tuesday wednesday thursday friday saturday";
+  }
 }
 #calender #actual-calender #calender-events #events .sunday {
   grid-area: "sunday";
@@ -1319,6 +1355,7 @@ textarea {
   margin-left: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  padding: 20px;
 }
 #craigs #listings .chair .chair-img {
   grid-area: "img";
@@ -1350,6 +1387,7 @@ textarea {
   margin-right: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  padding: 20px;
 }
 #craigs #listings .dresser .dresser-img {
   grid-area: "img";
@@ -1381,6 +1419,7 @@ textarea {
   margin-left: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  padding: 20px;
 }
 #craigs #listings .dresser2 .dresser2-img {
   grid-area: "img";
@@ -1412,6 +1451,7 @@ textarea {
   margin-right: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  padding: 20px;
 }
 #craigs #listings .couch .couch-img {
   grid-area: "img";
@@ -1443,6 +1483,7 @@ textarea {
   margin-left: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  padding: 20px;
 }
 #craigs #listings .shelf-thing .shelf-img {
   grid-area: "img";
@@ -1479,9 +1520,13 @@ textarea {
   grid-area: "down-arrow";
 }
 
+#hero1 {
+  padding-bottom: 10%;
+}
 #hero1 #background-img {
   background-image: url(img/hero1/hero1.jpg);
   background-repeat: no-repeat;
+  width: 100%;
 }
 #hero1 #hero1-content #locations-dropdown {
   display: grid;
@@ -1493,6 +1538,11 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "p img";
+  color: #fff;
+  border-radius: 16px;
+  border-style: solid;
+  padding-left: 16px;
+  margin: 16px;
 }
 #hero1 #hero1-content #locations-dropdown .location .p {
   grid-area: "p";
@@ -1504,21 +1554,24 @@ textarea {
   display: grid;
   grid-template-columns: 20% 1fr 20%;
   grid-template-areas: " . title . ";
+  color: #fff;
+  margin-top: 20%;
+  margin-left: 16px;
+  font-size: 48pt;
 }
 #hero1 #hero1-content .title .p {
-  color: #fff;
   grid-area: "title";
-}
-#hero1 #hero1-content .search-bar {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: " . search . ";
-  grid-area: "search";
 }
 #hero1 #hero1-content .search-bar .search {
   display: grid;
-  grid-template-columns: 1fr 20% 1fr;
+  grid-template-columns: 1fr 20% 10%;
   grid-template-areas: "p . img";
+  color: #fff;
+  border-style: solid;
+  border-radius: 16px;
+  margin: 40px;
+  margin-bottom: 40px;
+  padding-left: 16px;
 }
 #hero1 #hero1-content .search-bar .search .p {
   grid-area: "p";
